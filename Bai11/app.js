@@ -26,4 +26,4 @@ console.log(date3.getHours());
 console.log(date3.getTime());
 console.log(date3.getSeconds());
 
-console.log()
+// 4. co the su dung cac thu vien như datejs.com hoac momentjs.com de lam viec vs data hieu qua hon
