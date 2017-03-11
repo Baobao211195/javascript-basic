@@ -1,9 +1,22 @@
-// kiểu NUmber trong js
-var hex = new Number(0xffff);
-console.log(hex);
+/** 
+Object trong javascript
+*/
 
-// có các hàng số để lấy ra các số có sẵn
-console.log(Number.MAXVALUE);
+// có hai cách tao ra một object
+// 1 : object literal  var obj = {};
+// Properties là key : value
+// Key có thể là properties thông thường, function, object...
 
-// NaN khi parse sang kiểu sô để check
+var obj = {};
 
+var obj2 = {
+	name : "oanhpv",
+	age : 12,
+
+	sayHello : function() {
+		console.log(name + "hello world");
+	}
+
+};
+
+obj2.sayHello();
