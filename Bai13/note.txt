@@ -1,0 +1,9 @@
+======== Các điểm chú ý trong phần phạm vi biến=================
+1. global và local.
+2. biến được khai báo và khởi tạo bên ngoài bất cứ function nào gọi là global.
+3. biến được khai báo và khởi tạo bên trong function gọi là local.
+4. biến được khai báo mà ko dùng từ khóa var bên trong function cũng được gọi là biến global.
+5. Biến global có thể được truy cập, thay đổi tại bất kỳ đâu trong chương trình.
+6. Biến local không thể truy cập bên ngoài function mà nó đk khai báo.
+7. Biến global và local có thể cùng tên nhưng không ảnh hưởng tới nhau.
+8. Js không cho phép giới hạn scope của biến trong dấu ngoặc nhọn {};
