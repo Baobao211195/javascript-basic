@@ -1,0 +1,17 @@
++ Kiểm tra cú pháp chặt chẽ hơn.
++ sử dụng strict mode trong function
++ Mang lại tính bảo mật trong js.
++ IE từ 10, chrom 13 to
+- KHông cho phép:
+    + sử dụng biến chưa được định nghĩa.
+    + không được tên biến hoặc function trùng với keyword trong  js.
+    + không được đặt hai thuộc tính trùng nhau trong một object.
+    + không được đặt hai parameters trùng nhau trong một function.
+    + Gán giá trị cho một thuộc tính read-only
+    + Không được định nghĩa theo cơ số 8
+    + thay đổi argument objects trong hàm
+    + hàm eval() không được phép tạo biến,
+    + Không sử dụng câu lệnh with
+================từ khóa this.===============
+nếu không function nào sử dụng this thì this trỏ tới đối tượng windown
+nếu để strit mode thì this này sẽ bị vô hiệu hóa, this sẽ là undefined.
