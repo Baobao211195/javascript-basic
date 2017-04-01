@@ -1,0 +1,9 @@
++ là một khái niệm
++ Biến hay function có thể sử dụng trước khi khai báo
++ nó sẽ chuyển việc khai báo lên đầu trước khi chạy, việc
++ này do trình biên dịch làm ===> hoisting
++ Có tác dụng với khai báo, chứ ko có tác dụng với khởi tạo.
++ Chỉ những biến được khai báo thì đk di chuyển lên trên còn phẩn khởi tạo thì ko
+
++ hoisting sẽ di chuyển định nghĩa của function trước định
++ nghĩa của biến

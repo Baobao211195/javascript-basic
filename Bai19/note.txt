@@ -1,0 +1,13 @@
++ đối với class thì khai báo như function
+
+function A () {
+
+    this.a = function () {
+
+    }
+
+}
+
++ add method vào trong class
+
++ Nếu một thuộc tính chỉ có get mà ko có set thì trở thành thuộc tính read-only properties.
