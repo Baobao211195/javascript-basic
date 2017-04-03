@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p>Phma vam aonh</p>
+
+
+    <script>
+        // 'use strict'
+        var myVar = 100; // biến global của đối tượng window. == window.myVar
+
+        function myFunction () {
+
+            var myVar = 200 ; // biến local
+
+            console.log(myVar);
+            console.log(this.myVar);  // this đây được hiểu là đối tượng windown.myVar
+
+            this.myVar = 600; // this này là thể hiện của đổi tượng của Object myFunction
+                             // khi khởi tạo đối tượng .
+
+        }
+        
+        // myFunction();  // được hiểu là window.myFunction();
+
+        var obj = new myFunction();
+        console.log()
+
+        
+        function OuterFunction() {
+            
+            var myVar = 300;
+
+           function InnerFunction() {
+                var myVar = 400;
+                console.log(myVar);       //  400
+                console.log(this.myVar);  // vấn trỏ tới window.myVar = 100
+            }
+
+            InnerFunction();
+
+        }
+
+        OuterFunction();
+        //===================== call và apply() ==================================
+
+        var varX = 100;
+
+        function myFunc() {
+            console.log(this.varX);
+        }
+        // Khởi tạo hai đối tượng.
+        var obj = {
+            varX : 200,
+            myFunc: myFunc
+        };
+        var obj1 = {
+            varX : 300,
+            myFunc: myFunc
+        };
+        myFunc(); /// this sẽ trỏ tới window Object.
+        myFunc.call(obj); // this sẽ trỏ tới đối tượng obj.
+        myFunc.apply(obj1); // this sẽ trỏ tới đối tượng obj1.
+        obj.myFunc.call(window); /// this sẽ trỏ tới window Object.
+
+        myFunc.apply(obj1); // this sẽ trỏ tới đối tượng obj1.
+
+
+
+    </script>
+</body>
+</html>

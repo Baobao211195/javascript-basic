@@ -1,0 +1,2 @@
+Từ khóa this để trỏ tới đối tượng cụ thể.
+Nó phụ thuộc vào nơi nó dược gọi.

@@ -3,9 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Bai6</title>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
 </head>
 <body>
-<script type="text/javascript">
+<!--<script type="text/javascript">
 	var a = 7;
 	var b = "7";
 
@@ -14,7 +16,34 @@
 
 	console.log(a!=b);
 	
-</script>
-	
+</script>-->
+<input id ="click" type="button" value = "Click"/>
+ <input id ="usingBind" type = "button" value = "UsingBind"/>
+ <br/>
+ <span id = "showInfo"></span>
+<script type="text/javascript">
+function Person () {
+	this.name = "oanhpv";
+	this.age = 32;
+	this.showInfo = function() {
+		 $("#showInfo").text("This is " + this.name + "-" + this.age + "years old" )
+	}
+}
+
+
+var user = {
+  name: "A",
+  age: "35",
+  showInfo: function(){
+    $("#showInfo").text("This is " + this.name + "-" + this.age + "years old" )
+  }
+}
+
+var p = new Person();
+
+
+$("#click").click(p.showInfo);
+$("#usingBind").click(user.showInfo.bind(user));
+	</script>
 </body>
 </html>
